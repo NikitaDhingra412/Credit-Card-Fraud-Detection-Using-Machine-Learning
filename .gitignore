@@ -1,0 +1,30 @@
+# Ignore dataset files
+data/*.csv
+data/*.xlsx
+
+# Ignore model files (if you don't want to push large .pkl files)
+models/*.pkl
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environment folders
+venv/
+.env/
+env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore any temporary files
+*.tmp
