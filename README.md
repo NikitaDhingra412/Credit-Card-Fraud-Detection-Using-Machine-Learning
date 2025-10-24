@@ -90,8 +90,8 @@ print("Fraud probabilities:", proba)
 
 | Model               | ROC-AUC | Precision (fraud) | Recall (fraud) | F1-score (fraud) |
 | ------------------- | ------- | ----------------- | -------------- | ---------------- |
-| Logistic Regression | 0.9707  | 0.0557            | 0.9184         | 0.1051           |
-| Random Forest       | 0.9729  | 0.8404            | 0.8061         | 0.8229           |
+| Logistic Regression | 0.9707  | 0.0558            | 0.9184         | 0.1053           |
+| Random Forest       | 0.9729  | 0.8495            | 0.8061         | 0.8272           |
 
 > **Inference:** Random Forest with SMOTE provides the best balance between detecting fraud and minimizing false positives.
 
