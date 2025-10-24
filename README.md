@@ -26,27 +26,11 @@ This project aims to detect fraudulent credit card transactions using machine le
 ```
 Credit-Card-Fraud-Detection/
 │
-├── data/                      # Dataset instructions
-│   └── README.md              # How to download dataset
-│
-├── notebooks/
-│   └── Credit Card Fraud Detection.ipynb
-│
-├── src/                       # Optional Python scripts
-│   └── model_training.py
-│
-├── models/
-│   └── final_fraud_model.pkl
-│
-├── assets/                    # Plots & screenshots
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   └── precision_recall_curve.png
-│
-├── README.md
-├── Requirements.txt
-├── .gitignore
-└── LICENSE
+├── Credit_Card_Fraud_Detection.ipynb   # Main Jupyter notebook with full EDA & model pipeline
+├── README.md                            # Project overview, instructions, results
+├── Requirements.txt                     # Python dependencies
+├── .gitignore                            # Ignore dataset, models, cache, etc.
+
 ```
 
 ---
