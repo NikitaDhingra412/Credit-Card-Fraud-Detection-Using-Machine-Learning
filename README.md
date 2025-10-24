@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-This project aims to detect fraudulent credit card transactions using machine learning. It addresses extreme class imbalance using **SMOTE**, scales features for model stability, and evaluates models with **ROC-AUC** and **Precision-Recall metrics**. The pipeline includes **data preprocessing, model training, evaluation, and prediction** for real-time fraud detection.
+This project detects fraudulent credit card transactions using machine learning. It handles extreme class imbalance with **SMOTE**, scales features for model stability, and evaluates models with **ROC-AUC** and **Precision-Recall metrics**. The pipeline covers **data preprocessing, model training, evaluation, and prediction** for real-time fraud detection.
 
 ---
 
@@ -30,7 +30,6 @@ Credit-Card-Fraud-Detection/
 ├── README.md                            # Project overview, instructions, results
 ├── Requirements.txt                     # Python dependencies
 ├── .gitignore                            # Ignore dataset, models, cache, etc.
-
 ```
 
 ---
@@ -58,7 +57,7 @@ venv\Scripts\activate       # Windows
 pip install -r Requirements.txt
 ```
 
-4. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place it in `data/`.
+4. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) and place it in a folder, e.g., `data/`.
 
 ---
 
@@ -66,7 +65,7 @@ pip install -r Requirements.txt
 
 ### **Train & Evaluate Models**
 
-* Open `notebooks/Credit Card Fraud Detection.ipynb` and run the cells to:
+* Open `Credit_Card_Fraud_Detection.ipynb` and run the cells to:
 
   * Preprocess data
   * Handle class imbalance using SMOTE
@@ -75,11 +74,9 @@ pip install -r Requirements.txt
 
 ### **Predict New Transactions**
 
-Use the `predict_transaction` function in your notebook or Python script:
+Use the `predict_transaction` function from the notebook:
 
 ```python
-from src.model_training import predict_transaction
-
 preds, proba = predict_transaction("models/final_fraud_model.pkl", X_new, threshold=0.5)
 print("Predicted classes:", preds)
 print("Fraud probabilities:", proba)
@@ -97,12 +94,6 @@ print("Fraud probabilities:", proba)
 | Random Forest       | 0.9729  | 0.8404            | 0.8061         | 0.8229           |
 
 > **Inference:** Random Forest with SMOTE provides the best balance between detecting fraud and minimizing false positives.
-
----
-
-## **Visualizations**
-
-* Confusion Matrix, ROC Curve, and Precision-Recall Curve are saved in `assets/` and displayed in the notebook.
 
 ---
 
